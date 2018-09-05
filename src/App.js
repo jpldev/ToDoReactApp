@@ -11,9 +11,9 @@ class App extends Component {
           <img src={logo} className="App-logo" alt="logo" />
           <h1 className="App-title">Welcome to Coderhouse</h1>
         </header>
-        <p className="App-intro">
+        <div className="App-intro">
           <ItemCard title={"Hola"} description={"Chau"} />
-        </p>
+        </div>
       </div>
     );
   }
