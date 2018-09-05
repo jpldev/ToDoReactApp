@@ -4,7 +4,7 @@ Crear un componente ItemCard que reciba como propiedades el titulo y la descripc
 Mostrar en la página.
 */
 
-import React, { Component } from 'react';
+import React from 'react';
 
 
 //Componente Stateless - Funcional
