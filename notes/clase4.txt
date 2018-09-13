@@ -1,0 +1,12 @@
+this.setState()
+
+Formas de invocarla
+1) Le paso un objeto con el estado nuevo dentro {...} 
+2) Si necesito modificar el estado anterior, uso prevState
+
+  handleClick = () => {
+    this.setState(prevState => ({
+      isToggleOn: !prevState.isToggleOn
+    }));
+  } 
+
