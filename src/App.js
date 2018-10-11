@@ -1,17 +1,28 @@
 import React, { Component } from 'react';
 import './App.css';
-import ItemCard from './ItemCard';
+import Nav from './Nav';
+import { Route } from 'react-router-dom';
+import ListPinItems from './ListPinItems'
+import Profile from './Profile'
+import Following from './Following'
+
 
 class App extends Component {
   render() {
-    const items = [{ title: "Hola", description: "HolaDesc" }, { title: "Chau", description: "ChauDesc" }];
-    const listItems = items.map((item, index) =>
-      <ItemCard key={index} title={item.title} description={item.description} />
-    );
     return (
-      <div>{listItems}</div>
-    );
+      <div>
+        <Nav />
+        <Route exact path="/" component={ListPinItems} />
+        <Route exact path="/following" component={Following} />
+        <Route exact path="/profile" component={Profile} />
+        {/* <Route
+          path={'detail/:id'}
+          render={(props) => <DetailPinItem id={props.id}
+          /> */}
+      </div>
+  
+      );
+    }
   }
-}
-
-export default App;
+  
+  export default App;

@@ -1,9 +1,3 @@
-/*
-Ejercicio 8
-Crear un componente ItemCard que reciba como propiedades el titulo y la descripcion.
-Mostrar en la página.
-*/
-
 import React from 'react';
 
 
